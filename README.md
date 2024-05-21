@@ -118,6 +118,10 @@ event beginVehiclej(bitstring).
 event endVehiclej(bitstring).
 
 (*Queries*)
+query attacker(xi).
+query attacker(di).
+query attacker(xj).
+query attacker(dj).
 query attacker(SKij).(*通过这些询问验证会话密钥的安全性*)
 query attacker(SKji).
 query ID:bitstring; inj-event (endVehiclei(IDi)) ==> inj-event(beginVehiclei(IDi)).(*签名的不可伪造性；这两行语句不可以改*)
